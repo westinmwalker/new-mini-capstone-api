@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   # get "/products", controller: "products", action: "index"
+  root :to => "index#index"
+
   get "/products" => "products#index"
   post "/products" => "products#create"
   get "/products/:id" => "products#show"
